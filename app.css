@@ -392,8 +392,7 @@
   }
   
   body.dark .header {
-    background-image: linear-gradient(#0101018b, #0505058b),
-      url("../images/FarmsBackground.webp");
+    background-image: url("images/FarmsBackground.webp");
   }
   
   .header-textbox {
