@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8" />
+    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name = "description" content = "Welcome to my website"/>
+
+    <meta itemdrop = "name" content = "Donovan Crowley's Portfolio"/>
+    <meta itemdrop = "description" content = "Welcome to my website" />
+
+    <title>Donovan Crowley's Portfolio</title>
+    <link rel = "stylesheet" href = "app.css"/>
+    <script src = "app.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <script>
+    const theme = localStorage.getItem("theme") || dark;
+    document.body.classList.add(theme);
+  </script>
+
+    <header class="header">
+        <div class="menu-btn-container">
+          <div class="container">
+            <button type="button"  class="menu-btn">menu</button>
+          </div>
+        </div>
+  
+        <nav class="nav hidden">
+          <ol class="nav-items">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#work">Projects</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item">
+              <a href="#address" data-focused="last-focused">Contact</a>
+            </li>
+          </ol>
+        </nav>
+  
+        <div class="container">
+          <div class="header-textbox">
+            <!-- Picture & Header -->
+            <img src="Images/DonovanPhoto.jpg" alt = "Donovan Picture" loading = "lazy" class = "center" width = "200">
+             <h1 class="h1">
+              <span>Donovan Crowley</span>
+            </h1>
+
+            <p class ="header-text">Studying Electrical Engineering With A Depth In Software At Case Western Reserve University</p>
+
+            <div class = "header-btns">
+              <a href = "#address" class = "btn btn-cta">Contact Me</a>
+              <a href = "#work" class = "btn btn-secondary">My Projects</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <!--          -->
+      <!-- Projects -->
+      <!--          -->
+
+      <main>
+        <section class = "work">
+          <div class = "container">
+            <h2 class = "h2" id = "work">Projects</h2>
+            <div class = "work-boxes">
+
+              <!-- VTOL -->
+
+              <div class = "work-box">
+                <div class = "work-textbox">
+                  <h3 class = "h3">Vertical Take Off & Landing</h3>
+                  <p class = "work-text">
+                    A drone designed for precise delivery of essential supplies to hard-to-reach locations
+                  </p>
+                  <ol class = "work-technologies">
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>ESP32</li>
+                  </ol>
+
+                  
+                </div>
+                <picture class = "work-img">
+                  <img src = "Images/VTOL1.jpg" loading = "lazy" width = "500" />
+                </picture>
+              </div>
+
+              <!-- Electric Vehicle -->
+
+              <div class = "work-box">
+                <div class = "work-textbox">
+                  <h3 class = "h3">Electric Vehicle</h3>
+                  <p class = "work-text">
+                    An electric vehicle fabricated for high-performance endurance racing
+                  </p>
+
+                  <o class = "work-img">
+                    <li>Autodesk Fusion</li>
+                    <li>Arduino</li>
+                    <li>Circuits</li>
+                  </ol>
+                </div>
+
+                <picture class = "work-img">
+                  <img src = "Images/Car1.jpg" load = "lazy" width = "500"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--        -->
+        <!-- Skills -->
+        <!--        -->
+
+
+        <section class = "skills">
+          <div class = "container">
+            <h2 class = "h2" id = "skills">Skills</h2>
+            <div class = "skills-imgs">
+              <img src = "Images/c++.png" alt ="C++" class = "skills-img" loading = "lazy" title = "C++"/>
+              <img src = "Images/Python.png" alt ="Python" class = "skills-img" loading = "lazy" title = "Python"/>
+              <img src = "Images/Java.png" alt ="Java" class = "skills-img" loading = "lazy" title = "Java"/>
+              <img src = "Images/HTML5.png" alt ="HTML" class = "skills-img" loading = "lazy" title = "HTML5"/>
+              <img src = "Images/CSS3.png" alt ="CSS" class = "skills-img" loading = "lazy" title = "CSS3"/>
+              <img src = "Images/JavaScript.png" alt ="Javascript" class = "skills-img" loading = "lazy" title = "Javascript"/>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <address class = "address">
+      <div class = "container">
+        <h2 class = "h2" id = "address">Future Aspirations</h2>
+        <div class = "address-content">
+          <nav>
+            <br>
+            <p style = "font-size: 20px; text-align: center; margin-right: 250px; margin-left: 250px">
+              With the projects I have developed, I hope to leverage my knowledge to advance technology in software and hardware.
+          </p>
+          </nav>
+        </div>
+      </div>
+    </address>
+
+    <br>
+    <br>
+    <br>
+    
+    <!--The address at the end of the page-->
+
+    <hr>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="Gmail" target = "_blank" href="mailto:donocrowley16@gmail.com"
+                ><i class = "fa-regular fa-envelope"></i></a>
+              </li>
+
+              
+              <li class = "footer-link">
+                <a title="Github" href="https://github.com/TheCyberBoolean" target="_blank" rel="noopener"
+                  ><i class="fa-brands fa-github"></i></a>
+              </li>
+              
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/donovan-crowley-67a455276/" target="_blank" rel="noopener"
+                  ><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <br>
+          <address>
+            © 2024 - Developed by Donovan Crowley
+          </address>
+      </div>
+    </footer>
+</body>
+</html>
