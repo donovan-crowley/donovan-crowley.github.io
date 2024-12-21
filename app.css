@@ -531,7 +531,7 @@
     inline-size: 28px;
   }
   
-  body.dark .work-links img {
+  body .work-links img {
     filter: invert(1);
   }
   
@@ -700,7 +700,7 @@
     opacity: 1;
   }
   
-  body.dark .footer-link img {
+  body .footer-link img {
     filter: invert(1);
   }
   
