@@ -711,3 +711,17 @@
   address{
     text-align: center;
 }
+
+.address-content p{
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
+  padding-left: 250px;
+}
+
+@media(max-width: 1000px){
+  .address-content p{
+    width: 80%;
+    padding-left: 100px;
+  }
+}
