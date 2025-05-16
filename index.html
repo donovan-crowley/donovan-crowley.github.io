@@ -1,193 +1,321 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-  <meta charset="UTF-8" />
-    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset = "UTF-8" />
+    <meta https-equiv = "X-UA-Compatible" content = "ie=edge" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
 
     <meta name = "description" content = "Welcome to my website"/>
-
+    <meta name = "author" content = "Donovan Crowley"/>
+    <meta name = "keywords" content = "Computer Science, Electrical Engineering, CWRU, Case Western Reserve University, Software Engineering, Hardware Engineering, 
+    Artificial Intelligence, Machine Learning, Computer Vision, Robotics, C++, Python, Java, HTML, CSS, JavaScript"/>
     <meta itemdrop = "name" content = "Donovan Crowley's Portfolio"/>
     <meta itemdrop = "description" content = "Welcome to my website" />
 
-    <title>Donovan Crowley's Portfolio</title>
+    <title>Donovan Crowley | Portfolio</title>
+    
     <link rel = "stylesheet" href = "app.css"/>
     <script src = "app.js" defer></script>
 </head>
 <body>
+  <!-- Bookmark -->
+  <bookmark class = "bookmark">
+    <div class = "bookmark-top">
+      <!-- Bookmark name -->
+      <div class = "bookmark-head">
+        <a href = "#header"><h2>Donovan Crowley</h2></a>
+      </div>
 
-  <script>
-    const theme = localStorage.getItem("theme") || dark;
-    document.body.classList.add(theme);
-  </script>
+      <!-- Bookmark menu when screen squeezed -->
+      <div class = "bookmark-menu">
+        <div class = "menu-btn">Menu</div>
+      </div>
 
-    <header class="header">
-        <div class="menu-btn-container">
-          <div class="container">
-            <button type="button"  class="menu-btn">menu</button>
-          </div>
+      <!-- Bookmark links -->
+      <div class = "bookmark-links-container">
+        <div class = "bookmark-links">
+          <a href = "#about">About</a>
+          <a href = "#project">Projects</a>
+          <a href = "#skills">Skills</a>
+          <a href = "#contact">Contact</a>
+          <a href = "pdf/Donovan_Crowley_Resume.pdf" target = "_blank">Resume</a>
         </div>
-  
-        <nav class="nav hidden">
-          <ol class="nav-items">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#work">Projects</a></li>
-            <li class="nav-item"><a href="#skills">Skills</a></li>
-            <li class="nav-item">
-              <a href="#address" data-focused="last-focused">Contact</a>
+      </div>
+    </div>
+
+    <!-- Bookmark menu links -->
+    <div class = "bookmark-toggle-links">
+      <a href = "#about">About</a>
+      <a href = "#project">Projects</a>
+      <a href = "#skills">Skills</a>
+      <a href = "#contact">Contact</a>
+      <a href = "pdf/Donovan_Crowley_Resume.pdf" target = "_blank">Resume</a>
+    </div>
+  </bookmark>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container"  id = "header">
+      <div class="header-textbox">
+        <!-- Picture & Name -->
+        <img src="images/DonovanHeadShot.jpg" alt = "Donovan Picture" loading = "lazy" class = "header-img">
+        <h1 class="header-name">
+          <span class="animated-name">Donovan Crowley</span>
+        </h1>
+
+        <h1 class = "header-text">There's nothing a little duct tape and math can't solve</h1>
+        
+        <div class = "header-btns">
+          <a href = "#contact" class = "btn btn-cta">Contact Me</a>
+          <a href = "#project" class = "btn btn-secondary">My Projects</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- About -->
+    <section class = "about">
+      <h2 class = "h2" id = "about">About Me</h2>
+      <div class = "container">
+        <!-- CWRU LOGO -->
+        <div class = "about-img">
+          <img src = "images/CWRUicon.jpeg" alt = "CWRU" loading = "lazy" width = "500" title = "CWRU"/>
+        </div>
+
+        <!-- About Description -->
+        <div class = "about-content">
+          <h3 class = "h3">
+            CWRU '28,  B.S. in 
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">Electrical Engineering and Computer Science</b>
+            <br><br>
+            My interests include software development, machine learning, artificial intelligence, computer vision, and robotics.
+            <br><br>
+            I enjoy solving problems by combining my skills in hardware and software. 
+            I have extensive experience in 
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">C++</b>,
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">Python</b>, and
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">Java</b> and have worked with
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">ESP32</b>,
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">Pixhawk</b>, and 
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">Raspberry Pi</b>.
+            <br><br>
+            I also compete for the Case Western 
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">Cross Country</b> and 
+            <b style = "color:rgb(109, 150, 247); font-weight: bold">Track & Field</b>
+            teams and enjoy chess, hiking, camping, and reading.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class = "project">
+      <h2 class = "h2" id = "project">Projects</h2>
+      <div class = "project-row">
+        <!-- VTOL -->
+        <div class = "project-column">
+          <a href = "#portfolioModal1" id = "project-modal1">
+            <img src = "images/VTOL2.jpg" alt = "VTOL" loading = "lazy" class = "project-img">
+            <div class = "project-textbox">
+              <div class = "project-text">
+                <h2>VTOL</h2>
+                <h3>Python, C++, ESP32, Raspberry Pi</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Electric Vehicle -->
+        <div class = "project-column">
+          <a href = "#portfolioModal2" id = "project-modal2">
+            <img src = "images/Car4.jpg" alt = "Electric Vehicle" loading = "lazy" class = "project-img"/>
+            <div class = "project-textbox">
+              <div class = "project-text">
+                <h2>Electric Vehicle</h2>
+                <h3>Circuit Design, Fusion360, Data Analysis</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Skills -->
+    <section class = "skills">
+      <div class = "container">
+        <h2 class = "h2" id = "skills">Skills</h2>
+        <div class = "skills-imgs">
+          <img src = "images/c++.png" alt ="C++" class = "skills-img" loading = "lazy" title = "C++"/>
+          <img src = "images/Python.png" alt ="Python" class = "skills-img" loading = "lazy" title = "Python"/>
+          <img src = "images/Java.png" alt ="Java" class = "skills-img" loading = "lazy" title = "Java"/>
+          <img src = "images/HTML5.png" alt ="HTML" class = "skills-img" loading = "lazy" title = "HTML5"/>
+          <img src = "images/CSS3.png" alt ="CSS" class = "skills-img" loading = "lazy" title = "CSS3"/>
+          <img src = "images/JavaScript.png" alt ="Javascript" class = "skills-img" loading = "lazy" title = "Javascript"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class = "contact">
+      <div class = "container">
+        <h2 class = "h2" id= "contact">Contact Me</h2>
+        <form action = "https://api.web3forms.com/submit" method = "POST" class = "contact-content">
+          <input type = "hidden" name = "access_key" value = "13c83a6e-f66a-4408-9b06-69a8f9085c0f">
+          <div class = "contact-textbox">
+            <div class = "form-field">
+              <label for = "name">Name</label>
+              <input type = "text" name = "name" id = "name" required />
+            </div>
+            <div class = "form-field">
+              <label for = "email">Email</label>
+              <input type = "email" name = "email" id = "email" required inputmode = "email"/>
+            </div>
+          </div>
+          <div class = "contact-form">
+            <div class = "form-field">
+              <label for = "message">Your Message</label>
+              <textarea name = "message" id = "message" rows = "6" required></textarea>
+            </div>
+            <button type = "submit" class = "btn btn-cta">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    
+  </main>
+      
+  <!--Footer -->
+  <hr>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="Gmail" target = "_blank" href="mailto:donocrowley16@gmail.com"><img src = "images/email.png"/></a>
+            </li>
+            <li class = "footer-link">
+              <a title="Github" href="https://github.com/donovan-crowley" target="_blank" rel="noopener"><img src = "images/GitHub.png"/></a>
+            </li>               
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/donovan-crowley-67a455276/" target="_blank" rel="noopener">
+                <img src="images/linkedin.png"/>
+              </a>
             </li>
           </ol>
         </nav>
-  
-        <div class="container">
-          <div class="header-textbox">
-            <!-- Picture & Header -->
-            <img src="images/DonovanHeadShot.jpg" alt = "Donovan Picture" loading = "lazy" class = "center" width = "200">
-             <h1 class="h1">
-              <span>Donovan Crowley</span>
-            </h1>
-
-            <h1 class ="header-text">Studying Electrical Engineering With A Depth In Software At Case Western Reserve University</h1>
-
-            <div class = "header-btns">
-              <a href = "#address" class = "btn btn-cta">Contact Me</a>
-              <a href = "#work" class = "btn btn-secondary">My Projects</a>
-            </div>
-          </div>
-        </div>
-      </header>
-
-
-      <!--          -->
-      <!-- Projects -->
-      <!--          -->
-
-      <main>
-        <section class = "work">
-          <div class = "container">
-            <h2 class = "h2" id = "work">Projects</h2>
-            <div class = "work-boxes">
-
-              <!-- VTOL -->
-
-              <div class = "work-box">
-                <div class = "work-textbox">
-                  <h3 class = "h3">Vertical Take Off & Landing</h3>
-                  <p class = "work-text">
-                    A drone designed for precise delivery of essential supplies to hard-to-reach locations
-                  </p>
-                  <ol class = "work-technologies">
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>ESP32</li>
-                  </ol>
-
-                  
-                </div>
-                <picture class = "work-img">
-                  <img src = "images/VTOL1.jpg" loading = "lazy" width = "500" />
-                </picture>
-              </div>
-
-              <!-- Electric Vehicle -->
-
-              <div class = "work-box">
-                <div class = "work-textbox">
-                  <h3 class = "h3">Electric Vehicle</h3>
-                  <p class = "work-text">
-                    An electric vehicle fabricated for high-performance endurance racing
-                  </p>
-
-                  <ol class = "work-technologies">
-                    <li>Autodesk Fusion</li>
-                    <li>Arduino</li>
-                    <li>Circuits</li>
-                  </ol>
-                </div>
-
-                <picture class = "work-img">
-                  <img src = "images/Car1.jpg" load = "lazy" width = "500"/>
-                </picture>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--        -->
-        <!-- Skills -->
-        <!--        -->
-
-
-        <section class = "skills">
-          <div class = "container">
-            <h2 class = "h2" id = "skills">Skills</h2>
-            <div class = "skills-imgs">
-              <img src = "images/c++.png" alt ="C++" class = "skills-img" loading = "lazy" title = "C++"/>
-              <img src = "images/Python.png" alt ="Python" class = "skills-img" loading = "lazy" title = "Python"/>
-              <img src = "images/Java.png" alt ="Java" class = "skills-img" loading = "lazy" title = "Java"/>
-              <img src = "images/HTML5.png" alt ="HTML" class = "skills-img" loading = "lazy" title = "HTML5"/>
-              <img src = "images/CSS3.png" alt ="CSS" class = "skills-img" loading = "lazy" title = "CSS3"/>
-              <img src = "images/JavaScript.png" alt ="Javascript" class = "skills-img" loading = "lazy" title = "Javascript"/>
-            </div>
-          </div>
-        </section>
-
-      </main>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
-    <br>
-
-    <address class = "address">
-      <div class = "container">
-        <h2 class = "h2" id = "address">Future Aspirations</h2>
-        <div class = "address-content">
-            <br>
-            <p>
-              With the projects I have developed, I hope to leverage my knowledge to advance technology in software and hardware.
-          </p>
-        </div>
       </div>
-    </address>
+      <br>
+      <address>
+        Copyright © Donovan Crowley 2025
+      </address>
+    </div>
+  </footer>
 
-    <br>
-    <br>
-    <br>
-    
-    <!--The address at the end of the page-->
+  <!-- VTOL Modal -->
+  <div id="portfolioModal1" class="modal">
+    <div class="modal-content">
+      <div class = "close-btn">
+        <span class="close-btn1">&times;</span>
+      </div>
+      <div class = "modal-header">
+        <h2>Vertical Take-Off and Landing</h2>
+      </div>
+      <div class = "modal-body">
+        <img src = "images/VTOL3.jpg" alt = "VTOL Group Photo" loading = "lazy" class = "modal-img"/>
+        <p>Our team won <b style = "color:white; font-weight: bold">1st place</b> 
+        in the 2025 Vertical Flight Society Design-Build-Vertical-Flight Competition
+        </p>
+        <h2>Background</h2>
+        <p>
+          This project aimed to build a drone to compete for the VFS Competition, focusing on agility, speed, payload capacity, and precise payload dropping.
+        </p>
+        <h2>Process</h2>
+        <p>
+          First, I developed the software and hardware of an ESP32 Camera. 
+          The implementation involved a Hough Circle Transform algorithm to detect circular edges in the image and convert that image into a binary format that removes pixels outside the target region.
+          Then, I coordinated with the payload dropping lead to incorporate a servo motor with the ESP32 to drop specific payloads on command aimed at this location.
+          <br><br>
+          Next, I worked to integrate a Raspberry Pi to interface with the Pixhawk flight controller, which was the main brain of the drone.
+          I wrote Python code to set specific GPIO pins high and activate transistor switches, but we ultimately worked with only the Pixhawk to minimize the total weight. 
+          <br><br>
+          I soldered the components shown in the schematic below to assemble six circuit boards to build connections between the Pixhawk and each of the six motors on the drone. 
+        </p>
+        <img src = "images/VTOL4.jpg" alt = "VTOL Schematic" loading = "lazy" class = "modal-img"/>
+      </div>
+    </div>
+  </div>
 
-    <hr>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <nav>
-            <ol class="footer-links">
-              <li class="footer-link">
-                <a title="Gmail" target = "_blank" href="mailto:donocrowley16@gmail.com"
-                ><img src = "images/email.png"/></a>
-              </li>
-
-              
-              <li class = "footer-link">
-                <a title="Github" href="https://github.com/donovan-crowley" target="_blank" rel="noopener"
-                  ><img src = "images/GitHub.png"/></a>
-              </li>
-              
-              <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/donovan-crowley-67a455276/" target="_blank" rel="noopener"
-                  ><img src="images/linkedin.png"/></a>
-              </li>
-            </ol>
-          </nav>
-        </div>
+  <!-- EV Modal -->
+  <div id="portfolioModal2" class="modal">
+    <div class="modal-content">
+      <div class = "close-btn">
+        <span class="close-btn2">&times;</span>
+      </div>
+      <div class = "modal-header">
+        <h2>Electric Vehicle</h2>
+      </div>
+      <div class = "modal-body">
+        <img src = "images/CAR1.jpg" alt = "Car Group Photo" loading = "lazy" class = "modal-img"/>
+        <p>Our team won <b style = "color:white; font-weight: bold">3rd place</b> 
+        in the Novice Division at the 2023 Lime Rock Park Electrathon Competition</p>
+        <h2>Background</h2>
+        <p>We built an electric vehicle from scratch for an endurance competition, developing a car that could go the most distance in an hour.</p>
+        <h2>Important Components</h2>
+        <li>Two 12V Yellow Top Optima lead-acid batteries, providing a total voltage of 24V for high specific energy</li>
+        <li>Alltrax Motor Controller</li>
+        <li>DC Motor with 2800 RPM</li>
+        <li>Bicycle Disc Brakes</li>
         <br>
-          <address>
-            © 2025 - Developed by Donovan Crowley
-          </address>
+
+        <h2>Tools Used</h2>
+        <li>Fusion 360 & 3D Printer to design and print parts that protected the electrical components and connected awkward pieces such as the mirrors and fan</li>
+        <li>Soldering iron to connect electronics</li>
+        <li>Hot glue gun, string, and tape to connect parts to the chassis</li>
+        <li>Digital multimeter to measure voltage, current, and resistance at different parts of the circuit</li>
+        <br>
+
+        <h2>Process</h2>
+        <p>While originally tasked with developing the foundations of the vehicle including the chassis, mirrors, throttle, brakes, steering wheel, and chair, 
+          I ran into problems with the electrical system. 
+          <br><br>
+          Seeing this challenge would eventually need to be overcome, 
+          I spearheaded the development of the circuit design. The given schematic for the motor controller appeared to be incorrect,
+          so I researched, tested, and implemented my own adaptation inspired by the original to power the vehicle.
+        </p>
+        <img src = "images/CAR2.jpg" alt = "Car Schematic" loading = "lazy" class = "modal-img"/>
+        <br>
+
+        <h2>Circuit</h2>
+        <p>
+          The simplest loop in the circuit was connecting the controller pins to the potentiometer that controls the throttle as shown in the original schematic.
+          The rest of the circuit was not as easy, and we could never produce power to rotate the motor sprocket following the original.
+          <br><br>
+          So, I continuously redesigned and tested the schematic until I found my final design, as shown above, that incorporated a brake light and display monitor.
+          Once the vehicle was able to run, we focused on perfecting the other aspects.
+        </p>
+
+        <h2>Calculations</h2>
+        <p>For the endurance aspect of the competition, we looked to maximize our performance by analyzing the weight and energy cost of the vehicle.
+          <br><br>
+          The competition required that the minimum weight of the driver with additional weight to the vehicle must be 80kg. 
+          Since both drivers were under 80kg, we stacked our motor, batteries, and all the electronics in the back and added our ballast to the front.
+          This distribution proved advantageous, allowing the vehicle to better climb the hills in the course.
+          <br><br>
+          We stayed around 30-40mph throughout the entire race to conserve energy and maintain a relatively fast speed. 
+          We used more energy to climb hills and on the straight-aways than while turning or descending.
+          <br><br>
+          I measured the center-to-center distance between the motor and wheel to be about 16", ensuring little slack with the gear chain.
+          Through online research, I determined a 6:1 motor-to-sprocket ratio to be most efficient for the endurance, turns, and hills of the competition.
+        </p>
+        <img src = "images/CAR3.jpg" alt = "Driving Car" loading = "lazy" class = "modal-img"/>
       </div>
-    </footer>
+    </div>
+  </div>
 </body>
 </html>
