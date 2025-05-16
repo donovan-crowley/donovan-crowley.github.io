@@ -332,155 +332,8 @@ main {
   .bookmark-links{
     display: none;
   }
-<<<<<<< HEAD
 
   .bookmark-menu{
-=======
-  
-  .btn-secondary:hover,
-  .btn-secondary:focus {
-    border-color: var(--important);
-  }
-  
-  /* ------------------ */
-  /* ----- Layout ----- */
-  /* ------------------ */
-  
-  section:not(:first-child) {
-    padding-block-start: var(--gutter-huge);
-  }
-  
-  section:first-child {
-    padding-block-start: 7rem;
-  }
-  
-  @media (max-width: 885px) {
-    :root {
-      --gutter-huge: 8rem;
-      --gutter-x-large: 4rem;
-    }
-  }
-  
-  main {
-    border-top: 1px solid var(--border);
-    border-top-left-radius: var(--radius);
-    border-top-right-radius: var(--radius);
-    background-color: var(--bg-color-primary);
-    transform: translateY(calc(-1 * var(--radius)));
-  }
-  
-  @media (max-width: 1185px) {
-    :root {
-      --radius: 45px;
-    }
-  }
-  
-  /* ----------------------- */
-  /* ----- Menu Button ----- */
-  /* ----------------------- */
-  
-  .menu-btn-container {
-    position: fixed;
-    width: 100%;
-    top: var(--gutter-x-small);
-    left: 0;
-    z-index: 4;
-  }
-  
-  .menu-btn {
-    display: block;
-    margin-inline-start: auto;
-    border: 1px solid var(--border-dark);
-    inline-size: 132px;
-    padding-block: var(--gutter-nano);
-    border-radius: var(--gutter-large);
-    text-decoration: none;
-    background-color: var(--bg-color-secondary);
-    color: var(--important);
-    cursor: pointer;
-  }
-  
-  .menu-btn,
-  .nav-items a {
-    font-stretch: 125%;
-    font-weight: 900;
-  }
-  
-  /* ---------------------- */
-  /* ----- Navigation ----- */
-  /* ---------------------- */
-  
-  .nav {
-    min-block-size: 100vh;
-    position: fixed;
-    width: 100%;
-    background-color: #57059f;
-    background-image: var(--gradient-brand);
-    transition: 450ms var(--easing);
-    z-index: 3;
-  }
-  
-  .nav-items {
-    position: absolute; 
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%) translateX(-15%);
-    list-style-type: none;
-  }
-  
-  .nav-item:not(:last-child) {
-    margin-block-end: var(--gutter-x-small);
-  }
-  
-  .nav-item a {
-    display: inline-block;
-    font-size: var(--h2);
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .nav-item a::after {
-    content: "";
-    display: block;
-    block-size: var(--gutter-nano);
-    width: 100%;
-    transform: scale(0);
-    transform-origin: left;
-    background-color: white;
-    transition: transform 250ms var(--easing);
-  }
-  
-  .nav-item a:hover::after,
-  .nav-item a:focus::after {
-    transform: scale(1);
-  }
-  
-  /* ------------------ */
-  /* ----- Header ----- */
-  /* ------------------ */
-  
-  .header {
-    min-block-size: calc(100vh + var(--radius));
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-  }
-  
-  body.dark .header {
-    background-image: linear-gradient(#0101018b, #0505058b),
-      url(../images/FarmsBackground.jpg);
-  }
-  
-  .header-textbox {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .h1 span {
->>>>>>> test-branch
     display: block;
   }
 
@@ -505,7 +358,7 @@ main {
   }
 }
 
-/* ----- Header ----- */
+/* ---- Header ---- */
 .header {
   min-block-size: calc(100vh + var(--radius));
   background-attachment: fixed;
