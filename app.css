@@ -378,7 +378,7 @@ body .header {
   font-size: 4rem;
   background: linear-gradient(270deg, #ff7f50, #ff69b4, rgb(246, 246, 108), #6df66d, #ff7f50);
   background-size: 1000% 100%;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainboxText 40s ease-in-out infinite;
 }
