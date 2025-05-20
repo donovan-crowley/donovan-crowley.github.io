@@ -210,7 +210,9 @@ h3{
 }
 
 .btn-cta:hover,
-.btn-cta:focus {
+.btn-cta:focus,
+.btn-code:focus,
+.btn-code:hover {
   box-shadow: 0 0 10px var(--important);
 }
   
@@ -631,6 +633,10 @@ body .header {
   padding: 30px;
 }
 
+.modal-content a{
+  text-decoration: none;
+}
+
 .modal-header {
   padding-top: 50px;
   font-size: 1.5rem;
@@ -671,6 +677,22 @@ body .header {
   margin-right: auto;
   border-radius: 20px;
   box-shadow: 8px 8px 15px rgba(4, 4, 4, 0.5);
+}
+
+.btn-code{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-color-primary);
+  background-color: var(--important);
+  margin: auto;
+  gap: 15px;
+}
+
+.git-img{
+  block-size: 30px;
+  inline-size: 30px;
+  display: block;
 }
 
 
