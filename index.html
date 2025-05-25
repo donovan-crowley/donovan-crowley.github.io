@@ -355,6 +355,10 @@
           Thus, I transitioned to use Wikipedia's public API with Axios to fetch page data directly and extrapolate internal links using a breadth-first search approach.
           The process still takes a considerable amount of time, yet it is much faster than my initial approach. 
           Also, it's important to ensure the start and end links exist before the code fetches multiple Wikipedia pages, skipping the desired end.
+          <br><br>
+          Then, I switched to Python to implement the SentenceTransformer pretrained language model. 
+          Additionally, I switched to an A* search to embed each link and use cosine similarity to compare the links based on the given end goal with the SentenceTransformers library.
+          A higher cosine similarity meant the link was was semantically closer to the goal and that link would be pushed to the top of a priority-queue to be analyzed further.
         </p>
       </div>
       <a title = "Github WebScraper" href = https://github.com/donovan-crowley/WebScraper><button class = "btn btn-code"><img class = "git-img" src = "images/GitHub.png"/>Source Code</button></a>
