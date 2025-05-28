@@ -462,6 +462,11 @@ body .header {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .header-textbox .container{
+    position: relative;
+    height: 100vh;
+  }
   
   .header-btns {
     flex-direction: column;
