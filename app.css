@@ -310,6 +310,7 @@ main {
 
 .bookmark-menu {
   display: none;
+  margin-left: auto;
 }
 
 .menu-btn{
@@ -338,6 +339,10 @@ main {
   .btn-secondary:hover,
   .btn-secondary:focus {
     border-color: var(--important);
+  }
+
+  .bookmark-menu{
+    display: block;
   }
 
   .bookmark{
