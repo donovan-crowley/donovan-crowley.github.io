@@ -459,7 +459,6 @@ body .header {
 @media (max-width: 400px) {
   .header-textbox {
     text-align: center;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding-inline: 0.6rem;
