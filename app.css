@@ -419,7 +419,7 @@ body .header {
   
 .header-img {
   width: min(70vw, 300px);
-  height: min(70vw, 300px);
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
   border: 8px solid white;
@@ -461,11 +461,6 @@ body .header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .header-textbox .container{
-    position: relative;
-    height: 100vh;
   }
   
   .header-btns {
