@@ -7,6 +7,9 @@ const span2 = document.getElementsByClassName("close-btn2")[0];
 const modal3 = document.getElementById("portfolioModal3");
 const trigger3 = document.getElementById("project-modal3");
 const span3 = document.getElementsByClassName("close-btn3")[0];
+const modal4 = document.getElementById("portfolioModal4");
+const trigger4 = document.getElementById("project-modal4");
+const span4 = document.getElementsByClassName("close-btn4")[0];
 
 // Set the background color of bookmark to black after scrolling
 window.addEventListener('scroll', function(){
@@ -54,6 +57,13 @@ window.onclick = function(event) {
     document.body.classList.remove("lock-screen");
     document.body.classList.remove("body-dark");
   }
+
+  // Close Object Tracker
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+    document.body.classList.remove("lock-screen");
+    document.body.classList.remove("body-dark");
+  }
 }
 
 // Open EV modal
@@ -80,6 +90,20 @@ trigger3.onclick = function(e) {
 // Close Web Scrape modal with x click
 span3.onclick = function() {
   modal3.style.display = "none";
+  document.body.classList.remove("lock-screen");
+  document.body.classList.remove("body-dark");
+}
+
+// Open Object Tracker modal
+trigger4.onclick = function(e) {
+  modal4.style.display = "block";
+  document.body.classList.add("lock-screen");
+  document.body.classList.add("body-dark");
+}
+
+// Close Object Tracker modal with x click
+span4.onclick = function() {
+  modal4.style.display = "none";
   document.body.classList.remove("lock-screen");
   document.body.classList.remove("body-dark");
 }

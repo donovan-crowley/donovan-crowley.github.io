@@ -154,6 +154,19 @@
           </a>
         </div>
 
+        <!-- Object Tracker -->
+        <div class = "project-column">
+          <a href = "#portfolioModal4" id = "project-modal4">
+            <img src = "images/ComputerVision_Test1.png" alt = "Object Tracker Image" loading = "lazy" class = "project-img"/>
+            <div class = "project-textbox">
+              <div class = "project-text">
+                <h2>Object Tracker</h2>
+                <h3>OpenCV, Object Detection, Hough Circle Transform, Machine Learning</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -330,7 +343,7 @@
   </div>
 
 
-  <!-- Web Scrape -->
+  <!-- Web Scrape Modal -->
   <div id="portfolioModal3" class="modal">
     <div class="modal-content">
       <div class = "close-btn">
@@ -358,6 +371,57 @@
         </p>
       </div>
       <a title = "Github WebScraper" href = https://github.com/donovan-crowley/WebScraper><button class = "btn btn-code"><img class = "git-img" src = "images/GitHub.png"/>Source Code</button></a>
+    </div>
+  </div>
+
+  <!-- Object Tracker Modal -->
+  <div id="portfolioModal4" class="modal">
+    <div class="modal-content">
+      <div class = "close-btn">
+        <span class="close-btn4">&times;</span>
+      </div>
+      <div class = "modal-header">
+        <h2>Object Tracker</h2>
+      </div>
+      <div class = "modal-body">
+        <video class = "modal-img" autoplay muted controled loop>
+         <source src = "videos/ObjectTrackerTraining.mp4" type = "video/mp4" alt = "Object Tracker Training Video">
+         Your browser does not support the video tag.
+        </video>
+        <br>
+        <h2>Overview</h2>
+        <p>
+        Developed a real-time object tracking algorithm in C++ using OpenCV. 
+        The program captures live video from a webcam using OpenCV's VideoCapture, detects circular objects, learns the object's color characteristics, and tracks the object frame by frame.
+        </p>
+        <h2>SEARCH</h2>
+        <p>
+          The default search mode converts the frames to grayscale and detects objects using the Hough Circle Transform.
+        </p>
+        <h2>TRAIN</h2>
+        <p>
+          Once a target is found, the train mode is deployed by typing the key "t" on the computer.
+          The algorithm samples pixels inside and outside the circle to calculate the average HSV (Hue, Saturation, Value) values for color boundaries.
+          The program iteratively adjusts the thresholds to maximize the difference between the internal and external color values of the circle.
+          When the optimal threshold is found, the program automatically transitions into the tracking mode.
+        </p>
+        <h2>TRACK</h2>
+        <p>
+          Using the learned HSV range to create a binary mask, the tracking mode applies morphological operations to reduce noise and focus on the object to track.
+          The programs tracks the center of the object using image moments and traces a line to display the objects movement.
+        </p>
+        <h2>READ</h2>
+        <p>
+          I used the read mode more for the development of the project to familiarize myself with OpenCV HSV values.
+          This mode calculates the hue, saturation, and value within a particular fixed region to display real-time color values.
+        </p>
+        <div class = "img-overlay">
+          <img src = "images/OT-Heart.png" alt = "Object Tracker Heart" loading = "lazy" class = "modal-img heart"/>
+          <img src = "images/OT-Star.png" alt = "Object Tracker Star" loading = "lazy" class = "modal-img star"/>
+        </div>
+        
+      </div>
+      <a title = "Github Object Tracker" href = https://github.com/donovan-crowley/ComputerVis><button class = "btn btn-code"><img class = "git-img" src = "images/GitHub.png"/>Source Code</button></a>
     </div>
   </div>
 
